@@ -1,0 +1,40 @@
+{
+  "name": "node_app",
+  "version": "1.0.0",
+  "description": "basic node app w/ typescript and docker",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && node index.js",
+    "dev": "tsc && concurrently --raw \"tsc --watch\" \"npm run watch -s\" \"nodemon -q --config nodemon.json index.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "chokidar --silent --initial \"**/*.ts\" -c \"npm run lint -s\"",
+    "lint": "tslint --type-check --force --format stylish --project \"tsconfig.json\" && echo(",
+    "docker": "docker run -u \"node\" -m \"300M\" --memorey-swap \"1G\" -w \"/home/node/app\" npm start",
+    "dev-tasksSS": "concurrently --raw \"pm2 stop all --silent && npm start\" \"npm run -s lint\"",
+    "devSS": "npm run start && npm run lint && chokidar \"**/*.ts\" -c \"npm run -s dev-tasks\"",
+    "startSS": "tsc && pm2 start index.js --silent",
+    "testSS": "echo \"Error: no test specified\" && exit 1",
+    "dev-tasksX": "concurrently --raw \"npm run -s lint\" \"node index.js\"",
+    "dev-tasksSSSSSS": "concurrently --raw \"forever --silent stopall && npm start\" \"npm run -s lint\"",
+    "devSSSSS": "npm run start && chokidar \"**/*.ts\" -c \"npm run -s dev-tasks\""
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "chokidar-cli": "^1.2.0",
+    "concurrently": "^3.4.0",
+    "nodemon": "^1.11.0",
+    "tslint": "^5.1.0",
+    "typescript": "^2.2.2",
+    "typings": "^2.1.1"
+  },
+  "dependencies": {
+    "chokidar": "^1.6.1",
+    "express": "^4.15.2",
+    "express-limiter": "^1.6.0",
+    "forever": "^0.15.3",
+    "helmet": "^3.5.0",
+    "pm2": "^2.4.5",
+    "winston": "^2.3.1"
+  }
+}

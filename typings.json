@@ -1,0 +1,11 @@
+{
+  "globalDependencies": {
+    "node": "registry:dt/node#7.0.0+20170322231424"
+  },
+  "dependencies": {
+    "chokidar": "registry:dt/chokidar#1.6.1+20170322214548",
+    "express": "registry:npm/express#4.14.0+20170217205433",
+    "helmet": "registry:dt/helmet#0.0.0+20170310054102",
+    "winston": "registry:dt/winston#2.3.0+20170323124512"
+  }
+}

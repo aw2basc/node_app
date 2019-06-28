@@ -6,7 +6,7 @@ var winston = require("winston");
 var app = express();
 app.use(helmet());
 app.get('/', function (req, res) {
-    res.send('xceligent-auth');
+    res.send('<h1>🤘</h1>');
 });
 app.listen(3000, function () {
     winston.log("info", "http://localhost:3000");

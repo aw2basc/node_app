@@ -1,0 +1,3 @@
+{
+  "app": "npx ts-node aws/bin/node_app-cdk.ts"
+}

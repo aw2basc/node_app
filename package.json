@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "basic node app w/ typescript and docker",
   "main": "index.js",
+  "bin": {
+    "aws": "bin/aws.js"
+  },
   "scripts": {
     "start": "tsc && node index.js",
     "start:dev": "tsc && concurrently --raw \"npm run watch:tsc\" \"npm run watch:lint -s\" \"npm run watch:nodemon\"",
@@ -16,9 +19,14 @@
   "author": "",
   "license": "UNLICENSED",
   "devDependencies": {
+    "@aws-cdk/aws-sns": "^0.36.0",
+    "@aws-cdk/aws-sns-subscriptions": "^0.36.0",
+    "@aws-cdk/aws-sqs": "^0.36.0",
+    "@aws-cdk/core": "^0.36.0",
     "@types/node": "^12.0.10",
     "@typescript-eslint/eslint-plugin": "^1.11.0",
     "@typescript-eslint/parser": "^1.11.0",
+    "aws-cdk": "^0.36.0",
     "chokidar": "^3.0.1",
     "chokidar-cli": "^1.2.2",
     "concurrently": "^4.1.1",

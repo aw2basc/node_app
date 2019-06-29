@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "tsc && node index.js",
-    "dev": "tsc && concurrently --raw \"npm run watch:tsc\" \"npm run watch:lint -s\" \"npm run watch:nodemon\"",
+    "start:dev": "tsc && concurrently --raw \"npm run watch:tsc\" \"npm run watch:lint -s\" \"npm run watch:nodemon\"",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch:lint": "chokidar --silent --initial \"**/*.ts\" -c \"npm run lint\"",
     "watch:nodemon": "nodemon -q --config nodemon.json index.js",

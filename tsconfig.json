@@ -8,7 +8,6 @@
     "preserveConstEnums": true,
     "noImplicitAny": false,
     "inlineSourceMap": true,
-    "declaration": true,
     "experimentalDecorators": true,
     "pretty": true
   },

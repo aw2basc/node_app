@@ -14,7 +14,7 @@ RUN mkdir -p /home/node/app
 WORKDIR /home/node/app
 
 # npm
-COPY package.json /home/node/app
+COPY ../package.json /home/node/app
 RUN npm install --silent --progress-false
 
 # copy app

@@ -1,0 +1,51 @@
+{
+  "vpc-provider:account=881385135648:filter.vpc-id=vpc-ab906bd2:region=us-east-1": {
+    "vpcId": "vpc-ab906bd2",
+    "availabilityZones": [
+      "us-east-1a",
+      "us-east-1a",
+      "us-east-1b",
+      "us-east-1b",
+      "us-east-1c",
+      "us-east-1c"
+    ],
+    "privateSubnetIds": [
+      "subnet-68955d44",
+      "subnet-04945c28",
+      "subnet-4112a00b",
+      "subnet-0410a24e",
+      "subnet-5c02ec00",
+      "subnet-6705eb3b"
+    ],
+    "privateSubnetNames": [
+      "Private"
+    ],
+    "vpnGatewayId": "vgw-1c36c075"
+  },
+  "vpc-provider:account=881385135648:filter.vpc-id=vpc-183a7863:region=us-east-1": {
+    "vpcId": "vpc-183a7863",
+    "availabilityZones": [
+      "us-east-1a",
+      "us-east-1c"
+    ],
+    "privateSubnetIds": [
+      "subnet-6145a24f",
+      "subnet-9710f5cb"
+    ],
+    "privateSubnetNames": [
+      "Private"
+    ]
+  },
+  "vpc-provider:account=881385135648:filter.vpc-id=vpc-655cfb1e:region=us-east-1": {
+    "vpcId": "vpc-655cfb1e",
+    "availabilityZones": [
+      "us-east-1a"
+    ],
+    "publicSubnetIds": [
+      "subnet-2381940c"
+    ],
+    "publicSubnetNames": [
+      "Public"
+    ]
+  }
+}

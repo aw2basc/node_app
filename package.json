@@ -15,7 +15,7 @@
     "watch:tsc": "tsc --watch",
     "build:cdk": "tsc && cdk synth",
     "lint": "eslint --cache **/*.ts",
-    "docker": "docker run -u \"node\" -m \"300M\" --memorey-swap \"1G\" -w \"/home/node/app\" npm start"
+    "docker": "docker run -u \"node\" -m \"300M\" --memory-swap \"1G\" -w \"/home/node/app\" npm start"
   },
   "author": "",
   "license": "UNLICENSED",
@@ -25,6 +25,7 @@
     "@aws-cdk/aws-ecs": "^0.36.0",
     "@aws-cdk/aws-elasticloadbalancingv2": "^0.36.0",
     "@aws-cdk/aws-iam": "^0.36.0",
+    "@aws-cdk/aws-rds": "^0.36.0",
     "@aws-cdk/aws-route53": "^0.36.0",
     "@aws-cdk/aws-route53-targets": "^0.36.0",
     "@aws-cdk/aws-sns": "^0.36.0",
